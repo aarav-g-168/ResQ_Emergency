@@ -2,40 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    /* Emergency Response Theme - Professional Law Enforcement Colors */
     --background: 0 0% 100%;
     --foreground: 222 84% 5%;
     --card: 0 0% 100%;
     --card-foreground: 222 84% 5%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 84% 5%;
-    
-    /* Primary: Professional Blue (Police/Emergency) */
     --primary: 213 94% 68%;
     --primary-foreground: 0 0% 100%;
     --primary-glow: 213 94% 85%;
-    
-    /* Emergency Red for Critical Actions */
     --emergency: 0 84% 60%;
     --emergency-foreground: 0 0% 100%;
     --emergency-glow: 0 84% 85%;
-    
-    /* Success Green for Completed Actions */
     --success: 142 76% 36%;
     --success-foreground: 0 0% 100%;
     --success-glow: 142 76% 75%;
-    
-    /* Warning Amber for Alerts */
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 100%;
     --warning-glow: 38 92% 85%;
-    
     --secondary: 210 40% 96%;
     --secondary-foreground: 222 84% 5%;
     --muted: 210 40% 96%;
@@ -47,19 +33,14 @@ All colors MUST be HSL.
     --border: 214 32% 91%;
     --input: 214 32% 91%;
     --ring: 213 94% 68%;
-    
-    /* Mobile-optimized shadows */
     --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
     --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
     --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
     --shadow-emergency: 0 4px 14px 0 hsl(var(--emergency) / 0.25);
     --shadow-primary: 0 4px 14px 0 hsl(var(--primary) / 0.25);
-    
-    /* Emergency Response Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-emergency: linear-gradient(135deg, hsl(var(--emergency)), hsl(var(--emergency-glow)));
     --gradient-hero: linear-gradient(180deg, hsl(var(--background)), hsl(var(--primary) / 0.05));
-    
     --radius: 0.75rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5% 26%;
@@ -72,34 +53,24 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark Mode - Emergency Response Theme */
     --background: 222 84% 5%;
     --foreground: 210 40% 98%;
     --card: 222 84% 5%;
     --card-foreground: 210 40% 98%;
     --popover: 222 84% 5%;
     --popover-foreground: 210 40% 98%;
-    
-    /* Primary: Bright Emergency Blue for Dark Mode */
     --primary: 213 94% 75%;
     --primary-foreground: 222 84% 5%;
     --primary-glow: 213 94% 85%;
-    
-    /* Emergency Red - More Vibrant in Dark */
     --emergency: 0 84% 65%;
     --emergency-foreground: 0 0% 100%;
     --emergency-glow: 0 84% 85%;
-    
-    /* Success Green */
     --success: 142 76% 45%;
     --success-foreground: 0 0% 100%;
     --success-glow: 142 76% 75%;
-    
-    /* Warning Amber */
     --warning: 38 92% 60%;
     --warning-foreground: 0 0% 100%;
     --warning-glow: 38 92% 85%;
-    
     --secondary: 217 33% 18%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217 33% 18%;
@@ -111,19 +82,14 @@ All colors MUST be HSL.
     --border: 217 33% 18%;
     --input: 217 33% 18%;
     --ring: 213 94% 75%;
-    
-    /* Dark mode shadows with emergency colors */
     --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.25);
     --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.25), 0 2px 4px -2px hsl(0 0% 0% / 0.25);
     --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.25), 0 4px 6px -4px hsl(0 0% 0% / 0.25);
     --shadow-emergency: 0 4px 14px 0 hsl(var(--emergency) / 0.4);
     --shadow-primary: 0 4px 14px 0 hsl(var(--primary) / 0.4);
-    
-    /* Dark mode gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-emergency: linear-gradient(135deg, hsl(var(--emergency)), hsl(var(--emergency-glow)));
     --gradient-hero: linear-gradient(180deg, hsl(var(--background)), hsl(var(--primary) / 0.1));
-    
     --sidebar-background: 240 6% 10%;
     --sidebar-foreground: 240 5% 96%;
     --sidebar-primary: 213 94% 75%;
